@@ -6,7 +6,7 @@ DISCORD : https://discord.gg/VMHfdwzWC4
 //offset
 uintptr_t FNameOffset = 0xEA10B00;  
 //DA
-char* v2; // rdi
+        char* v2; // rdi
         int v4; // ebx
         __int16 result; // ax
         int v6; // edx
