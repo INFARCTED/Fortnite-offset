@@ -4,9 +4,12 @@ DISCORD : https://discord.gg/VMHfdwzWC4
 DISCORD : https://discord.gg/VMHfdwzWC4
 DISCORD : https://discord.gg/VMHfdwzWC4
 //offset
-uintptr_t FNameOffset = 0xEA10B00;  
+namespace VariableFName {
+    uintptr_t FNameOffset = 0xEA10B00;
+    __int16 result_var = 38i64;
+}
 //DA
-        char* v2; // rdi
+             char* v2; // rdi
         int v4; // ebx
         __int16 result; // ax
         int v6; // edx
@@ -14,9 +17,9 @@ uintptr_t FNameOffset = 0xEA10B00;
         int v8; // ecx
         __int16 v9; // ax
 
-        v2 = buffer; // ur buffer
-        v4 = nameLength; //ur nameLength
-        result = 38i64;
+        v2 = buffer;
+        v4 = Length;
+        result = VariableFName::result_var;
         v6 = 0;
         v7 = 38;
         if (v4)
@@ -30,7 +33,6 @@ uintptr_t FNameOffset = 0xEA10B00;
                 *v2++ ^= result;
             } while (v6 < v4);
         }
-
 
 DISCORD : https://discord.gg/VMHfdwzWC4
 DISCORD : https://discord.gg/VMHfdwzWC4
