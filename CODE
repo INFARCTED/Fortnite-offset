@@ -1,41 +1,33 @@
-DISCORD : https://discord.gg/XasnsGqQTm
-DISCORD : https://discord.gg/XasnsGqQTm
-DISCORD : https://discord.gg/XasnsGqQTm
-DISCORD : https://discord.gg/XasnsGqQTm
-DISCORD : https://discord.gg/XasnsGqQTm
+//DISCORD : https://discord.gg/XasnsGqQTm
 //offset
 namespace VariableFName {
-    uintptr_t FNameOffset = 0xEA10B00;
+    uintptr_t Gworld = 0x0xED56188; //ok! 
+    uintptr_t FNameOffset = 0xED38000; //ok!
     __int16 result_var = 38i64;
 }
 //DA
-             char* v2; // rdi
-        int v4; // ebx
-        int v5; // edx
-        int v6; // ecx
-        int v7; // ecx
-        __int16 v8; // ax
-
+        char* v2; // rbx
+        unsigned int v4; // edi
+        unsigned int v5; // eax
+        int v6; // edx
+        unsigned int v7; // er8
+        __int64 v8; // rax
 
         v2 = buffer;
         v4 = Lenght;
         v8 = VariableFName::result_var;
-        v5 = 0;
-        v6 = 38;
+        v6 = ((_DWORD)v8 << 8) | ((unsigned int)v8 >> 8);
+        v7 = (unsigned int)v8 >> 11;
         if (v4)
         {
+            v8 = v4;
             do
             {
-                v7 = v5++ | v6;
-                v8 = v7;
-                v6 = 2 * v7;
-                *v2++ ^= ~v8;
-            } while (v5 < v4);
-      
+                v6 += v7;
+                *v2++ ^= v6;
+                --v8;
+            } while (v8);
         }
 
-DISCORD : https://discord.gg/XasnsGqQTm
-DISCORD : https://discord.gg/XasnsGqQTm
-DISCORD : https://discord.gg/XasnsGqQTm
-DISCORD : https://discord.gg/XasnsGqQTm
-DISCORD : https://discord.gg/XasnsGqQTm
+//DISCORD : https://discord.gg/XasnsGqQTm
+
