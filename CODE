@@ -2,7 +2,7 @@
 //offset
 namespace VariableFName {
     uintptr_t Gworld = 0xED56188; //ok! 
-    uintptr_t FNameOffset = 0xED38000; //ok!
+    uintptr_t FNameOffset = 0xED7C140; //ok!
     __int16 result_var = 38i64;
 }
 //DA
