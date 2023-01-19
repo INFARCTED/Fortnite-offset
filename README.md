@@ -1,5 +1,4 @@
-# Fortnite-FName-DA-
-fortnite offset
+# Fortnite offset
 
 
 i give that for all update
