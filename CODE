@@ -3,7 +3,6 @@
 namespace VariableFName {
     uintptr_t Gworld = 0xED56188; //ok! 
     uintptr_t FNameOffset = 0xED7C140; //ok!
-    __int16 result_var = private;
 }
 //DA
         char* v2; // rdi
@@ -11,10 +10,11 @@ namespace VariableFName {
         __int64 result; // rax
         unsigned int v6; // edx
         unsigned int v7; // er8
-
+      
         v2 = buffer;
         v4 = Lenght;
-        result = private;
+        result = read<__int64>(DriverVar::imagebase + 0xNO SPOIL LMFAO);
+     
         v6 = ((_DWORD)result << 8) | ((unsigned int)result >> 8);
         v7 = (unsigned int)result >> 11;
         if (v4)
