@@ -6,27 +6,26 @@ namespace VariableFName {
     __int16 result_var = 38i64;
 }
 //DA
-        char* v2; // rbx
-        unsigned int v4; // edi
-        unsigned int v5; // eax
-        int v6; // edx
+        char* v2; // rdi
+        unsigned int v4; // ebx
+        __int64 result; // rax
+        unsigned int v6; // edx
         unsigned int v7; // er8
-        __int64 v8; // rax
 
         v2 = buffer;
         v4 = Lenght;
-        v8 = VariableFName::result_var;
-        v6 = ((_DWORD)v8 << 8) | ((unsigned int)v8 >> 8);
-        v7 = (unsigned int)v8 >> 11;
+        result = private;
+        v6 = ((_DWORD)result << 8) | ((unsigned int)result >> 8);
+        v7 = (unsigned int)result >> 11;
         if (v4)
         {
-            v8 = v4;
+            result = v4;
             do
             {
                 v6 += v7;
                 *v2++ ^= v6;
-                --v8;
-            } while (v8);
+                --result;
+            } while (result);
         }
 
 //DISCORD : https://discord.gg/XasnsGqQTm
