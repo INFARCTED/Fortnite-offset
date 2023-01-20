@@ -13,7 +13,7 @@ namespace VariableFName {
 
         v2 = buffer;
         v4 = Lenght;
-        result = read<DWORD64>(DriverVar::imagebase + 0xE???????);
+        result = read<DWORD64>(module + 0xE???????);
         v6 = (result << 8) | (result >> 8);
         v7 = result >> 11;
         if (v4)
