@@ -5,18 +5,17 @@ namespace VariableFName {
     uintptr_t FNameOffset = 0xED7C140; //ok!
 }
 //DA
-        char* v2; // rdi
+    char* v2; // rdi
         unsigned int v4; // ebx
-        __int64 result; // rax
-        unsigned int v6; // edx
+        int v6; // edx
         unsigned int v7; // er8
-      
+        __int64 result; // rax
+
         v2 = buffer;
         v4 = Lenght;
-        result = read<__int64>(DriverVar::imagebase + 0xNO SPOIL LMFAO);
-     
-        v6 = ((_DWORD)result << 8) | ((unsigned int)result >> 8);
-        v7 = (unsigned int)result >> 11;
+        result = read<DWORD64>(DriverVar::imagebase + 0xE???????);
+        v6 = (result << 8) | (result >> 8);
+        v7 = result >> 11;
         if (v4)
         {
             result = v4;
