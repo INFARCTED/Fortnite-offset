@@ -1,6 +1,7 @@
 //DISCORD : https://discord.gg/XasnsGqQTm
 //offset
 namespace VariableFName {
+uintptr_t GWORLD = 0xEC18148;
 uintptr_t FNameOffset = 0xEBBE1E8;
 uintptr_t Retrurn_to = join my discord;
 }
