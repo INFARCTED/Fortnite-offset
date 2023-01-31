@@ -2,7 +2,7 @@
 //offset
 namespace VariableFName {
 uintptr_t GWORLD = 0xEC18148;
-uintptr_t FNameOffset = 0xEBBE1E8;
+uintptr_t FNameOffset = 0xEBBE1E8;  (not 100% sure) waiting my dump fully loaded
 uintptr_t Retrurn_to = join my discord;
 }
 //DA
