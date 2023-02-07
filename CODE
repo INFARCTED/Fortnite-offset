@@ -16,7 +16,7 @@ uintptr_t FNameOffset = 0xEC38540;
 
         v2 = buffer;
         v4 = Lenght;
-        result = read<DWORD>(module + value);
+        result = read<int>(module + value) >> 5;
         v6 = 0;
         if (v4)
         {
