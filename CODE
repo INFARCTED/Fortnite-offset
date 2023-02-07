@@ -6,7 +6,7 @@ n#define GWORLD = 0xEC17208
 
 -DECRYPT ANSI-
 
-uintptr_t FNameOffset = WAIT;
+uintptr_t FNameOffset = 0xEC38540;
  uintptr_t value = 0xEB41A40;
         char* v2; // rdi
         int v4; // ebx
