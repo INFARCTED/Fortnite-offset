@@ -2,12 +2,12 @@
 //offset
 
 #define GWORLD = 0xEE3BA38
-#define FNAME = wait 5 min
+#define FNAME = 0xEE5E0C0
 #define RESULT_DA = 0xED66410
 
 -DECRYPT ANSI-
 
-uintptr_t FNameOffset = wait 5 min
+uintptr_t FNameOffset = 0xEE5E0C0;
  uintptr_t value = 0xED66410;
  char* v2; // rdi
         unsigned int v4; // ebx
