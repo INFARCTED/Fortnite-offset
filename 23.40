@@ -1,0 +1,34 @@
+//DISCORD : https://discord.gg/XasnsGqQTm
+//offset
+
+#define GWORLD = 0xEE3BA38
+#define FNAME = wait 5 min
+#define RESULT_DA = 0xED66410
+
+-DECRYPT ANSI-
+
+uintptr_t FNameOffset = wait 5 min
+ uintptr_t value = 0xED66410;
+ char* v2; // rdi
+        unsigned int v4; // ebx
+        __int64 result; // rax
+        unsigned int v6; // edx
+        unsigned int v7; // er8
+
+        v2 = buffer;
+        v4 = Lenght;
+        result = read<__DWORD>(module + value); //try use just DWORD
+        v6 = ((_DWORD)result << 8) | ((unsigned int)result >> 8);
+        v7 = (unsigned int)result >> 7;
+        if (v4)
+        {
+            result = v4;
+            do
+            {
+                v6 += v7;
+                *v2++ ^= v6;
+                --result;
+            } while (result);
+        }
+
+//DISCORD : https://discord.gg/XasnsGqQTm
