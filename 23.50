@@ -1,7 +1,7 @@
 //DISCORD : https://discord.gg/XasnsGqQTm
 //offset
 
-#define GWORLD = 0xEE5E0C0 //ok
+#define GWORLD = 0xEE5A148 //ok
 #define FNAME = 0xEE7C240 //ok
 #define RESULT_DA = 0xED83F44 //ok
 
