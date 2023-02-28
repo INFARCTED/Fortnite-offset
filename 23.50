@@ -13,22 +13,22 @@ uintptr_t value = 0xED83F44; //ok
 
           char* v2; // rdi
         int v4; // ebx
-        __int64 result; // rax
+        unsigned int v5; // eax
         int v6; // er8
         unsigned int v7; // ecx
         char v8; // dl
 
         v2 = buffer;
         v4 = Lenght;
-        result = read<_DWORD>(module + value);
+        v5 = read<DWORD>(DriverVar::module + value);
         v6 = 0;
         if (v4)
         {
             do
             {
                 v7 = *v2++;
-                v8 = result ^ (16 * v7) ^ (result ^ (v7 >> 4)) & 0xF;
-                result = (unsigned int)(result + 2 * v6++);
+                v8 = v5 ^ (16 * v7) ^ (v5 ^ (v7 >> 4)) & 0xF;
+                v5 += 2 * v6++;
                 *(v2 - 1) = v8;
             } while (v6 < v4);
         }
