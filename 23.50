@@ -11,7 +11,7 @@
 uintptr_t FNameOffset = 0xEE7C240; //ok
 uintptr_t value = 0xED83F44; //ok
 
-          char* v2; // rdi
+               char* v2; // rdi
         int v4; // ebx
         unsigned int v5; // eax
         int v6; // er8
@@ -20,7 +20,7 @@ uintptr_t value = 0xED83F44; //ok
 
         v2 = buffer;
         v4 = Lenght;
-        v5 = read<DWORD>(DriverVar::module + value);
+        v5 = read<DWORD>(DriverVar::module + value) >> 5;
         v6 = 0;
         if (v4)
         {
