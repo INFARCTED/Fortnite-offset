@@ -1,0 +1,36 @@
+//DISCORD : https://discord.gg/XasnsGqQTm
+//offset
+
+#define GWORLD = 0xEE5E0C0 //ok
+#define FNAME = 0xEE5E0C0 //no wait
+#define RESULT_DA = 0xED83F44 //ok
+
+-DECRYPT ANSI-
+
+uintptr_t FNameOffset = 0xEE5E0C0; //ok
+ uintptr_t value = 0xED66410;
+uintptr_t FNameOffset = 0x???; //wait
+uintptr_t value = 0xED83F44; //ok
+
+  char* v2; // rdi
+        int v4; // ebx
+        __int64 result; // rax
+        int v6; // er8
+        __int16 v7; // dx
+
+        v2 = buffer;
+        v4 = Lenght;
+        result = read<_DWORD>(module + value );
+        v6 = 0;
+        if (v4)
+        {
+            do
+            {
+                v7 = result ^ (*v2 << 8);
+                result = (unsigned int)(result + 2 * v6++);
+                *v2 = HIBYTE(*v2) | v7 & 0xFF00;
+                ++v2;
+            } while (v6 < v4);
+        }
+
+//DISCORD : https://discord.gg/XasnsGqQTm
