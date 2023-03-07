@@ -21,3 +21,13 @@ u can buy a custom source for 100€ dm me 'EFK#5573'
 sugarboy just look my github for update a cheat lol
 
 he re-post my leak lmfao
+
+
+
+xlohysco#1338 and BadVibesForever#1337 copies and pastes from my server the offsets and the decryptions that I leak...
+
+they take all the credit when they don't do anything :/ they just take what's on my server lol
+
+proof : https://cdn.discordapp.com/attachments/1055034013217202247/1082791293173903500/image.png
+proof #2 : https://cdn.discordapp.com/attachments/1055034013217202247/1082792622726316073/image.png
+proof #3 : https://cdn.discordapp.com/attachments/1055034013217202247/1082792777458397314/image.png
