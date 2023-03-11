@@ -18,7 +18,7 @@ uintptr_t value = 0xEE27DC0;
 
         v2 = buffer;
         v4 = Lenght;
-        result = read<DWORD>(module + value) >> 6;
+        result = read<DWORD>(module + value);
         v6 = ((_DWORD)result << 8) | ((unsigned int)result >> 8);
         v7 = (unsigned int)result >> 4;
         if (v4)
