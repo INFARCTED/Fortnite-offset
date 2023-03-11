@@ -2,12 +2,12 @@
 //offset
 
 #define GWORLD = 0xEF005E0 //ok
-#define FNAME = 0xwait //ok
+#define FNAME = 0xEF22B40 //ok
 #define RESULT_DA = 0xEE27DC0 //ok
 
 -DECRYPT ANSI-
 
-uintptr_t FNameOffset = 0xwait;
+uintptr_t FNameOffset = 0xEF22B40;
 uintptr_t value = 0xEE27DC0;
 
          char* v2; // rdi
