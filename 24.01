@@ -16,24 +16,28 @@ uintptr_t value = 0xEE02330;
         unsigned int v6; // edx
         unsigned int v7; // er8
 
- char* v2; // rdi
-        int v4; // ebx
+ char* v2; // rbx
+        int v4; // edi
+        unsigned int v5; // eax
         __int64 result; // rax
-        int v6; // er8
+        int v7; // er8
+        unsigned int v8; // edx
 
         v2 = buffer;
+
         v4 = Lenght;
-        result = read<unsigned int>(module + value);
-        v6 = 0;
+
+        result = read<unsigned int>(module + value) >> 5;
+        v7 = 0;
         if (v4)
         {
             do
             {
-                result = (unsigned int)(v6 + result + 96);
-                ++v6;
-                *v2 = (*v2 << 8) | (unsigned __int8)(result ^ HIBYTE(*v2));
-                ++v2;
-            } while (v6 < v4);
+                v8 = *v2++;
+                result = (unsigned int)(v7 + result + 96);
+                ++v7;
+                *(v2 - 1) = (16 * v8) | (result ^ (v8 >> 4)) & 0xF;
+            } while (v7 < v4);
         }
 
 
