@@ -23,7 +23,7 @@ uintptr_t value = 0xEE02330;
 
         v2 = buffer;
         v4 = Lenght;
-        result = read<DWORD>(module + value);
+        result = read<unsigned int>(module + value);
         v6 = 0;
         if (v4)
         {
