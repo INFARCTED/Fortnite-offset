@@ -6,7 +6,7 @@ OFFSET (24.01)
 
 
 -DECRYPT ANSI-
-NOT TESTED
+TESTED
 uintptr_t FNameOffset = 0xEEFE2C0;
 uintptr_t value = 0xEE02330;
 
