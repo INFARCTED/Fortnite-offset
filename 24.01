@@ -1,0 +1,66 @@
+OFFSET (24.01)
+
+#define GWORLD = 0xEEDBD10
+#define FNAME = 0xwaitIDA
+#define RESULT_DA = 0xEE02330
+
+
+-DECRYPT ANSI-
+NOT TESTED
+uintptr_t FNameOffset = 0xwaitIDA;
+uintptr_t value = 0xEE02330;
+
+         char* v2; // rdi
+        unsigned int v4; // ebx
+        __int64 result; // rax
+        unsigned int v6; // edx
+        unsigned int v7; // er8
+
+ char* v2; // rdi
+        int v4; // ebx
+        __int64 result; // rax
+        int v6; // er8
+
+        v2 = buffer;
+        v4 = Lenght;
+        result = read<DWORD>(module + value);
+        v6 = 0;
+        if (v4)
+        {
+            do
+            {
+                result = (unsigned int)(v6 + result + 96);
+                ++v6;
+                *v2 = (*v2 << 8) | (unsigned __int8)(result ^ HIBYTE(*v2));
+                ++v2;
+            } while (v6 < v4);
+        }
+
+
+
+
+
+
+Gworld : 0xEEDBD10
+FName : 0xwaitIDA
+GameInstance : 0x1B8
+LocalPlayerArray : 0x38
+PlayerController : 0x30
+AcknowledgedPawn : 0x330
+RootComponent : 0x190
+RelativeLocation : 0x128
+TeamIndex : 0x10A0
+CurrentWeapon : 0x8F8
+PlayerState : 0x2A8
+Mesh : 0x310
+ItemDefinition : 0x18
+Tier : 0x73
+DisplayName : 0x90
+Bones Array : 0x5F8
+Bones cache : 0x608
+
+
+signature :
+Getnamebyindex : 40 53 48 83 EC 20 33 C0 48 8B DA 48 89 02 48 89 42 08 E8 ? ? ? ? 48 8B C3 48 83 C4 20 5B C3
+
+if you re-post credit me !
