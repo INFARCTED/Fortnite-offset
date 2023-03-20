@@ -47,21 +47,25 @@ uintptr_t value = 0xEE02330;
 
 Gworld : 0xEEDBD10
 FName : 0xEEFE2C0
-GameInstance : 0x1B8
 LocalPlayerArray : 0x38
 PlayerController : 0x30
+GameInstance : 0x1B8
 AcknowledgedPawn : 0x330
-RootComponent : 0x190
-RelativeLocation : 0x128
-TeamIndex : 0x10A0
-CurrentWeapon : 0x8F8
-PlayerState : 0x2A8
-Mesh : 0x310
-ItemDefinition : 0x18
-Tier : 0x73
-DisplayName : 0x90
-Bones Array : 0x5F8
-Bones cache : 0x608
+RootComponent = 0x190
+RelativeLocation = 0x128
+TeamIndex = 0x10A0
+CurrentWeapon = 0x8F8
+PlayerState = 0x2A8
+Mesh = 0x310
+WeaponData = 0x3F8
+AmmoCount = 0xB8C
+DisplayName = 0x90
+bADSWhileNotOnGround = 0x4DF6
+Levels = 0x170
+PlayerCameraManager = 0x340
+LastFireTime = 0xAD8
+LastFireTimeVerified = 0xADC
+CurrentVehicle = 0x2428
 
 
 signature
