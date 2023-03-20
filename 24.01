@@ -1,13 +1,13 @@
 OFFSET (24.01)
 
 #define GWORLD = 0xEEDBD10
-#define FNAME = 0xwaitIDA
+#define FNAME = 0xEEFE2C0
 #define RESULT_DA = 0xEE02330
 
 
 -DECRYPT ANSI-
 NOT TESTED
-uintptr_t FNameOffset = 0xwaitIDA;
+uintptr_t FNameOffset = 0xEEFE2C0;
 uintptr_t value = 0xEE02330;
 
          char* v2; // rdi
@@ -42,7 +42,7 @@ uintptr_t value = 0xEE02330;
 
 
 Gworld : 0xEEDBD10
-FName : 0xwaitIDA
+FName : 0xEEFE2C0
 GameInstance : 0x1B8
 LocalPlayerArray : 0x38
 PlayerController : 0x30
