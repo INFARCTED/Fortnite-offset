@@ -69,8 +69,9 @@ CurrentVehicle = 0x2428
 
 
 signature
-Getnamebyindex : 40 53 48 83 EC 20 33 C0 48 8B DA 48 89 02 48 89 42 08 E8 ? ? ? ? 48 8B C3 48 83 C4 20 5B C3
-Decrypt ANSI : 48 89 5C 24 ? 57 48 83 EC 20 44 0F B7 01 48 8B DA 48 8D 51 04 49 C1 E8 06 48 8B F9 48 8B CB E8 ? ? ? ? 0F B7 3F C1 EF 06
-
+Getnamebyindex : 40 53 48 83 EC 20 33 C0 48 8B DA 48 89 02 48 89 42 08 E8 ?? ?? ?? ?? 48 8B C3 48 83 C4 20 5B C3
+Decrypt ANSI : 48 89 5C 24 ?? 57 48 83 EC 20 44 0F B7 01 48 8B DA 48 8D 51 04 49 C1 E8 06 48 8B F9 48 8B CB E8 ?? ?? ?? ?? 0F B7 3F C1 EF 06
+SpreadAddr : E8 ?? ?? ?? ?? 48 8D 4B 28 E8 ?? ?? ?? ?? 48 8B C8
+SpreadFunctionCall : 0F 57 D2 48 8D 4C 24 ?? 41 0F 28 CC E8 ?? ?? ?? ?? 48 8D 4C 24 ??
 
 if you re-post credit me !
