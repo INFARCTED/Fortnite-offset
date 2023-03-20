@@ -1,1 +1,2 @@
 GWorld signature : 48 89 05 ?? ?? ?? ?? 0F 28 D7
+Getnamebyindex signature : 40 53 48 83 EC 20 33 C0 48 8B DA 48 89 02 48 89 42 08 E8 ? ? ? ? 48 8B C3 48 83 C4 20 5B C3
