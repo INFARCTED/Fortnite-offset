@@ -1,0 +1,82 @@
+OFFSET/DUMP FN : https://discord.gg/rM9fZb74CA
+CHEAT FN : https://www.pluto-av-software.eu/
+WEBSITE : https://discord.gg/XasnsGqQTm
+
+OFFSET (24.01+1)
+
+#define GWORLD = 0xEEDBD10
+#define FNAME = 0xEEFD140
+#define RESULT_DA = 0xEE011E0
+
+
+-DECRYPT ANSI-
+TESTED (13h10)
+uintptr_t FNameOffset = 0xEEFD140;
+uintptr_t value = 0xEE011E0;
+
+         char* v2; // rdi
+        unsigned int v4; // ebx
+        __int64 result; // rax
+        unsigned int v6; // edx
+        unsigned int v7; // er8
+
+ char* v2; // rbx
+        int v4; // edi
+        unsigned int v5; // eax
+        __int64 result; // rax
+        int v7; // er8
+        unsigned int v8; // edx
+
+        v2 = buffer;
+
+        v4 = Lenght;
+
+        result = read<unsigned int>(module + value) >> 5;
+        v7 = 0;
+        if (v4)
+        {
+            do
+            {
+                v8 = *v2++;
+                result = (unsigned int)(v7 + result + 96);
+                ++v7;
+                *(v2 - 1) = (16 * v8) | (result ^ (v8 >> 4)) & 0xF;
+            } while (v7 < v4);
+        }
+
+
+
+
+
+
+Gworld : 0xEEDAB90
+FName : 0xEEFD140
+LocalPlayerArray : 0x38
+PlayerController : 0x30
+GameInstance : 0x1B8
+AcknowledgedPawn : 0x330
+RootComponent : 0x190
+RelativeLocation : 0x128
+TeamIndex : 0x10A0
+CurrentWeapon : 0x8F8
+PlayerState : 0x2A8
+Mesh : 0x310
+WeaponData : 0x3F8
+AmmoCount : 0xB8C
+DisplayName : 0x90
+bADSWhileNotOnGround : 0x4DF6
+Levels : 0x170
+PlayerCameraManager : 0x340
+LastFireTime : 0xAD8
+LastFireTimeVerified : 0xADC
+CurrentVehicle : 0x2428
+ReviveFromDBNOTime : 0x44A0
+bIsDBNO : 0x832
+Bones Array : 0x5F8
+Bones cache : 0x608
+
+
+signature
+Decrypt ANSI : 48 89 5C 24 ? 57 48 83 EC 20 44 0F B7 01 48 8B FA 49 C1 E8 06 48 8D 51 04 48 8B D9 4D 03 C0 48 8B CF E8
+
+if you re-post credit me !
