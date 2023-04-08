@@ -6,7 +6,6 @@ join my server for more code and buy my cheat :)
 
 
 OFFSET/DUMP FN : https://discord.gg/rM9fZb74CA
-WEBSITE : https://discord.gg/XasnsGqQTm
 
 
 
