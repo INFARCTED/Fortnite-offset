@@ -8,7 +8,7 @@ https://discord.gg/rM9fZb74CA
 
 -DECRYPT ANSI-
 uintptr_t FNameOffset = 0xEF89F80;
-uintptr_t value = 17;
+int value = 17;
 
 char *v2; // rdi
   int v4; // ecx
