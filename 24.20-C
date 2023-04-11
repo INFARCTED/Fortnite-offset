@@ -6,7 +6,7 @@ OFFSET (24.20-C) - DISCORD : https://discord.gg/NZSH99uG
 #define GObject = 0x105F09D0
 
 -DECRYPT ANSI-
-uintptr_t FNameOffset = 0xwait;
+uintptr_t FNameOffset = 0x10800400;
  int Lenght = Entry >> 6;
     char buffer[256];
     uintptr_t value = 0x0757720;
