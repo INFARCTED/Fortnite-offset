@@ -1,9 +1,9 @@
 OFFSET (24.20-C) - DISCORD : https://discord.gg/NZSH99uG
 
-#define GWORLD = 0x078A7D8 //ok
-#define FNAME = 0x0800400 //ok
-#define RESULT_DA = 0x0757720 //ok
-#define GObject = 0x05F09D0 //ok
+#define GWORLD = 0x1078A7D8
+#define FNAME = 0x10800400
+#define RESULT_DA = 0x10757720
+#define GObject = 0x105F09D0
 
 -DECRYPT ANSI-
 uintptr_t FNameOffset = 0xwait;
@@ -42,8 +42,8 @@ uintptr_t FNameOffset = 0xwait;
 
 
 
-Gworld : 0x0800400
-FName : 0xwait
+Gworld : 0x1078A7D8
+FName : 0x10800400
 WAIT
 
 if you re-post credit me !
