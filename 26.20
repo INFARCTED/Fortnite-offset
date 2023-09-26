@@ -1,0 +1,62 @@
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+GWORLD : 0xE7B9A48
+FNAME : 0xE950900
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// DA
+char* v2; // rdi
+            unsigned int v4; // ebx
+            __int64 result; // rax
+            unsigned int v6; // edx
+            unsigned int v7; // er8
+
+            v2 = buffer;
+            v4 = Lenght;
+            result = ReadProcessMemory<unsigned int>(module + 0xEA96588);
+            v6 = ((_DWORD)result << 8) | ((unsigned int)result >> 8);
+            v7 = (unsigned int)result >> 3;
+            if (v4)
+            {
+                result = v4;
+                do
+                {
+                    v6 += v7;
+                    *v2++ ^= v6;
+                    --result;
+                } while (result);
+            }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// W2S
+result = ReadProcessMemory<__int64>(module + 0xE322218);
+		v7 = module + 0xE3221D8;
+		if (result)
+			v7 = result;
+
+		__int64 EncryptedData[7];
+		
+		for (int i = 0; i < 7; i++)
+		EncryptedData[i] = ReadProcessMemory<__int64>(v7 + (i * 8));
+		EncryptedData[0] ^= 0x4CFB2AC8FE274CEBi64;
+		EncryptedData[1] ^= 0x4CFB2AC8FE274CEBi64;
+		EncryptedData[2] ^= 0x4EFB2AC9FE274CEAi64;
+		EncryptedData[3] ^= 0xAF841EB813427C9i64;
+		EncryptedData[4] ^= 0xAF841EB813427C9i64;
+		EncryptedData[5] ^= 0x4EF841EB813427C9i64;
+		EncryptedData[6] ^= 0x4E1DB9AD4C1EF28Bi64;
+
+		ViewPoint.Location = { *(double*)(&EncryptedData[1]),*(double*)(&EncryptedData[0]), *(double*)(&EncryptedData[2]) };
+		ViewPoint.Rotation = { *(double*)(&EncryptedData[4]),*(double*)(&EncryptedData[3]), *(double*)(&EncryptedData[5]) };
+		ViewPoint.FieldOfView = *(float*)(&EncryptedData[6]);
+
+		return ViewPoint;
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
