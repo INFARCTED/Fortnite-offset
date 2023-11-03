@@ -1,0 +1,44 @@
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+Uworld : 0xF16DE38
+Fname : 0xF33B480
+//credit EFK
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// DA
+ char* v2; // rdi
+  int v4; // ebx
+  unsigned int v5; // er9
+  unsigned int v6; // er8
+  __int64 result; // rax
+  unsigned int v8; // er9
+  int v9; // ecx
+
+  v2 = buffer;
+  v4 = Lenght;
+  v5 = ReadProcessMemory<unsigned int>(module + 0xF487188);
+  v6 = v5 ^ 0x9C677CC5;
+  result = 1041204193 * v5;
+  v8 = v5 % 0x21;
+  v9 = 0;
+  if (v4)
+  {
+      do
+      {
+          result = v9 + v8;
+          ++v9;
+          v6 += result;
+          *v2++ ^= v6;
+      } while (v9 < v4);
+ //credit EFK
+/////////////////////////////////////////////////////////////////////////////////////////////////
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
+https://discord.gg/cy5vK2pMPS
