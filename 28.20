@@ -1,0 +1,32 @@
+JOIN MY DISCORD SERVER : https://discord.gg/PHXKNjxUAS
+MY WEBSITE : https://infarcted.eu
+```
+char *v2; // rdi
+  int v4; // ecx
+  unsigned int v5; // eax
+  __int64 v6; // rdx
+
+  v2 = buffer;
+  v4 = 9;
+  v5 = Length;
+  if ( v5 )
+  {
+    v6 = v5;
+    do
+    {
+      LOWORD(v5) = v4 + ~*v2;
+      v4 += 7947;
+      *v2++ = v5;
+      --v6;
+    }
+    while ( v6 );
+```
+
+GWORLD : 0x1161FE98
+FNAME : 0x11944BC0
+GOBJECT : 0x12DD5C0
+BONEMATRIX : 0x142900C
+
+
+useless for me now but ishare for everyone
+discord cheat : https://discord.gg/PHXKNjxUAS
