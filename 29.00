@@ -1,0 +1,51 @@
+JOIN MY DISCORD IF U NEED CHEAT : https://discord.gg/9DyTYnDyaU
+JOIN MY DISCORD IF U NEED CHEAT : https://discord.gg/9DyTYnDyaU
+JOIN MY DISCORD IF U NEED CHEAT : https://discord.gg/9DyTYnDyaU
+
+Uworld : 0x11DFAE08 or 0x11F66558 //but i think is first one not tested
+GObject : 0x11F3EAC0 //OK v11 = v10 >= SDWORD1(xmmword_151F3EAD0) ? 0i64 : *(_QWORD *)xmmword_151F3EAC0 + 24i64 * (unsigned __int16)v10;
+StaticFindObject : 0x132B300 //OK
+BoneMatrix : 0x124B248
+FNAME : 0x12144040 //OK
+ProcessEvent : 0x4D //new PEvent
+---------------------------------------------------------------------------------------
+Bone Decryption :
+ v24 = *(_QWORD *)(a1 + 16i64 * *(int *)(a1 + 0x5E0) + 0x598);
+*(_OWORD *)a2 = *(_OWORD *)(v24 + 0x60 * v10 + 0x20);
+ v11 = *(_OWORD *)(v24 + 0x60 * v10 + 0x30);
+
+//Bone : 0x5E0 or 0x598
+//Bone Cache : 0x598 or 0x5E0
+---------------------------------------------------------------------------------------
+Decrypt Ansi : 
+char *v2; // rdi
+  int v4; // ebx
+  unsigned int v5; // er9
+  unsigned int v6; // er8
+  __int64 result; // rax
+  unsigned int v8; // er9
+  int v9; // ecx
+
+  v2 = buffer;
+  v4 = Length >> 6;
+  v5 = read<unsigned int>(Module + 0x1203F834) //or 0x122AE928
+  v6 = v5 ^ 0x9C677CC5;
+  result = 1041204193 * v5;
+  v8 = v5 % 0x21;
+  v9 = 0;
+  if ( v4 )
+  {
+    do
+    {
+      result = v9 + v8;
+      ++v9;
+      v6 += result;
+      *v2++ ^= v6;
+    }
+    while ( v9 < v4 );
+---------------------------------------------------------------------------------------
+please credit me if you use it for your GIT / UC shares
+
+JOIN MY DISCORD IF U NEED CHEAT : https://discord.gg/9DyTYnDyaU
+JOIN MY DISCORD IF U NEED CHEAT : https://discord.gg/9DyTYnDyaU
+JOIN MY DISCORD IF U NEED CHEAT : https://discord.gg/9DyTYnDyaU
