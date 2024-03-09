@@ -1,0 +1,58 @@
+Uworld : 0x10C628D8 or 0x10AF7108 //but i think is first one not tested
+GObject :  0x10C3AE40 //OK v11 = v10 >= dword_150C3AE54 ? 0i64 : *(_QWORD *)qword_150C3AE40 + 24i64 * (unsigned __int16)v10;
+StaticFindObject : 0x13FBDEC
+BoneMatrix : 0x1CDCFD4
+FNAME : 0x10E400C0
+ProcessEvent : 0x4D
+--------------------------------
+Bone Decryption :
+[CODE]
+v15 = sub_1415A46CC(a1 + 0x550);
+      if ( !v15 )
+      {
+        v20 = *(_QWORD *)(a1 + 16i64 * *(int *)(a1 + 0x5E0) + 0x598);
+        *(_OWORD *)a2 = *(_OWORD *)(v20 + 0x60 * v10 + 0x20);
+        v11 = *(_OWORD *)(v20 + 0x60 * v10 + 0x30);
+        goto LABEL_4;
+      }
+      if ( (int)v10 < *(_DWORD *)(a1 + 0x610) )
+      {
+        v16 = *(int *)(*(_QWORD *)(a1 + 0x608) + 4 * v10);
+        if ( (_DWORD)v16 != -1 )
+        {
+          v17 = *(int *)(v15 + 0x5E0);
+          if ( (int)v16 < *(_DWORD *)(v15 + 16 * (v17 + 0x5A)) )
+          {
+            v18 = 0x60 * v16;
+            v19 = *(_QWORD *)(v15 + 16 * v17 + 0x598);
+            *(_OWORD *)a2 = *(_OWORD *)(v19 + v18 + 0x20);
+            v11 = *(_OWORD *)(v19 + v18 + 0x30);
+[/CODE]
+
+Decrypt Ansi : 
+[CODE]
+char *v2; // rdi
+  int v4; // ebx
+  __int16 result; // ax
+  int v6; // edx
+  int v7; // ecx
+  int v8; // eax
+  unsigned int v9; // ecx
+
+  v2 = buffer;
+  v4 = Length >> 6;
+  result = read<__int16>(module + 0x10D3BB34); //or 0x10FAA9D8
+  v6 = 0;
+  v7 = 28;
+  if ( v4 )
+  {
+    do
+    {
+      v8 = v6++;
+      v9 = (v8 | 0xB000) + v7;
+      result = v9 ^ ~*v2;
+      v7 = v9 >> 2;
+      *v2++ = result;
+    }
+    while ( v6 < v4 );
+[/CODE]
