@@ -1,0 +1,62 @@
+```c++
+UWORLD : 0x11E88988
+GOBJECT : 0x11E60EC0
+STATICFINDOBJECT : 0x1909800
+BoneMatrix : 0x1AD592C
+FName (NamePoolChunk) : 0x12066800
+PEvent : 0x4D
+DrawTransition : 0x71
+```
+
+BONE EXTERNAL
+```c++
+   v14 = sub_141362334(a1 + 0x550);
+    if ( v14 )
+    {
+      if ( (int)v8 >= *(_DWORD *)(a1 + 0x628) )
+        goto LABEL_11;
+      v15 = *(int *)(*(_QWORD *)(a1 + 0x620) + 4 * v8);
+      if ( (_DWORD)v15 == -1 || (int)v15 >= *(_DWORD *)(v14 + 16i64 * *(int *)(v14 + 0x5F8) + 1464) )
+        goto LABEL_11;
+      v16 = 3 * v15;
+      v17 = *(_QWORD *)(v14 + 16 * (*(int *)(v14 + 0x5F8) + 0x5Bi64));
+    }
+    else
+    {
+      v16 = 3 * v8;
+      v17 = *(_QWORD *)(a1 + 16 * (*(int *)(a1 + 0x5F8) + 0x5Bi64));
+    }
+    v18 = 32 * v16;
+    *(_OWORD *)a2 = *(_OWORD *)(v17 + v18 + 0x20);
+    v13 = *(_OWORD *)(v17 + v18 + 0x30);
+    goto LABEL_12;
+  }
+  v19 = GetBoneMatrix_141AD592C(a1, v24, v7);
+  v20 = *(_OWORD *)(v19 + 0x68);
+  *(_QWORD *)a2 = *(_QWORD *)(v19 + 0x60);
+  *(_OWORD *)(a2 + 8) = v20;
+}
+```
+
+DECRYPT ANSI
+```c++
+char*v2; // rdi
+  int v4; // ecx
+  unsigned int v5; // eax
+  __int64 v6; // rdx
+ 
+  v2 = Buffer;
+  v4 = 9;
+  v5 = Length;
+  if ( v5 )
+  {
+    v6 = v5;
+    do
+    {
+      LOWORD(v5) = v4 + ~*v2;
+      v4 += 7947;
+      *v2++ = v5;
+      --v6;
+    }
+    while ( v6 );
+```
