@@ -53,7 +53,7 @@ char*v2; // rdi
     v6 = v5;
     do
     {
-      LOWORD(v5) = v4 + ~*v2;
+      LOWORD(v5) = v4 + ~*v2; //v5 = (v4 + ~*v2) & 0xFFFF;
       v4 += 7947;
       *v2++ = v5;
       --v6;
