@@ -1,0 +1,37 @@
+JOIN DISCORD : https://discord.gg/zy8gGxWaTj
+JOIN DISCORD : https://discord.gg/zy8gGxWaTj
+JOIN DISCORD : https://discord.gg/zy8gGxWaTj
+
+UWORLD : 0x124BF388
+GOBJECT : 0x12497750
+STATICFINDOBJECT : 0x17A803C
+FNAME (NamePool) : 0x126A01C0
+BONEMATRIX : 0x18F2CA8
+BONEARRAY : 0x5B0
+BONECACHE : 0x5F8
+PEvent : 0x4D
+DrawTransition : 0x71
+
+int v7 = namelength; // ebx
+				char* v9 = inputBuf; // r8
+				__int64 v10; // r9
+				int v11; // edx
+				unsigned int v12; // eax
+				char v13; // cl
+
+				v10 = 0;
+				v11 = Memory::read<unsigned int>(Memory::getBaseAddress() + 0x1259925C) >> 5;
+				if (v7)
+				{
+					do
+					{
+						v12 = (unsigned int)*v9 >> 4;
+						v13 = v11 ^ v12 ^ (16 * *v9);
+						v11 += 8 * v10;
+						v10 = (unsigned int)(v10 + 1);
+						*v9++ = v12 ^ v13 & 0xF0;
+					} while ((int)v10 < v7);
+
+JOIN DISCORD : https://discord.gg/zy8gGxWaTj
+JOIN DISCORD : https://discord.gg/zy8gGxWaTj
+JOIN DISCORD : https://discord.gg/zy8gGxWaTj
