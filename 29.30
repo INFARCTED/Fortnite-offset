@@ -1,0 +1,57 @@
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+UWORLD : 0x12634238
+GOBJECT : 0x1260C5A0
+STATIC_FIND_OBJECT : 0x13A8170
+GETBONEMATRIX : 0x1C7FD2C
+FNAME : 0x127F3180
+PEVENT : 0x4D
+DRAWTRANSITION : 0x71
+BONE CACHE : 0xNot Changed
+BONE ARRAY : 0xNot Changed
+
+
+Decrypt Ansi (Tested)
+
+      char* v2; // rdi
+    int v4; // ebx
+    int v5; // eax
+    int v6; // er8
+    unsigned int v7; // edx
+    __int64 v8; // rcx
+    __int64 v9; // rax
+
+    v2 = inputBuf;
+    v4 = namelength;
+    v6 = 0;
+    v7 = Memory::read<unsigned int>(Memory::getBaseAddress() + 0x1270893C) >> 5;
+    if (v4)
+    {
+        do
+        {
+            v7 += v6 + 160;
+            ++v6;
+            v5 = (16 * *v2) | (v7 ^ ((unsigned int)(char)*v2 >> 4)) & 0xF;
+            *v2++ = static_cast<char>(v5 & 0xFF);
+        } while (v6 < v4);
+    }
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
+JOIN MY DISCORD : discord.gg/infarcted
