@@ -1,5 +1,5 @@
 <dl>
-<dd> Fortnite 29.30 updated </dd>
+<dd> Fortnite 30.00 updated </dd>
 <dd> JOIN MY DISCORD IF U NEED CHEAT : https://discord.gg/9DyTYnDyaU </dd>
 <dd> JOIN MY DISCORD IF U NEED CHEAT : https://discord.gg/9DyTYnDyaU </dd>
 <dd> JOIN MY DISCORD IF U NEED CHEAT : https://discord.gg/9DyTYnDyaU </dd>
