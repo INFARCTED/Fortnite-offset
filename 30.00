@@ -1,0 +1,32 @@
+UWORLD : 0x12BC1FD0
+FNAME : 0x12D85B40
+GOBJECT : 0x12B99C10
+STATICFINDOBJECT : 0x16CC96C
+GETBONEMATRIX : 0x0x19A205C
+BONE CACHE : 0x5B8 (or 0x600 ) 
+BONE ARRAY : 0x600 (or 0x5B8) 
+PEVENT : 0x4D
+DRAWTRANSITION : 0x71
+
+
+DECRYPT ANSI : 
+char*v2; // rdi
+  int v4; // ecx
+  unsigned int v5; // eax
+  __int64 v6; // rdx
+ 
+  v2 = Buffer;
+  v4 = 17;
+  v5 = Lenght;
+  if ( v5 )
+  {
+    v6 = v5;
+    do
+    {
+      LOWORD(v5) = v4 + ~*v2;
+      v4 += 7947;
+      *v2++ = v5;
+      --v6;
+    }
+    while ( v6 );
+  }
